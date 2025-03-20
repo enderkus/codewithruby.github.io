@@ -1,0 +1,132 @@
+/* Custom animations */
+@keyframes pulse-ruby {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(204, 52, 45, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(204, 52, 45, 0);
+  }
+}
+
+.ruby-pulse {
+  animation: pulse-ruby 2s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CC342D;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B0000;
+}
+
+/* Modern grid card effects */
+.bg-gray-50 {
+  transition: all 0.3s ease;
+}
+
+.bg-gray-50:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-color: #CC342D;
+}
+
+/* Logo animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.ruby-pulse {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Grid background pattern for left side */
+.bg-ruby {
+  background-color: #CC342D;
+  background-image: radial-gradient(#e15a55 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Extra text styles */
+h3.text-ruby {
+  position: relative;
+  display: inline-block;
+}
+
+h3.text-ruby:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #CC342D;
+}
+
+/* Logo container styling */
+.logo-container {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: visible;
+}
+
+.logo-badge {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(10deg);
+  animation: badge-bounce 3s ease-in-out infinite;
+}
+
+@keyframes badge-bounce {
+  0%, 100% {
+    transform: rotate(10deg) scale(1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.1);
+  }
+}
+
+/* Coming soon badge styling */
+.coming-soon-badge {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+/* Pulse dot animation */
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Add some frosted glass effects */
+.glass-effect {
+  background: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+} 
